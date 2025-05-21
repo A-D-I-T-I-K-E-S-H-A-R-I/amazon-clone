@@ -12,33 +12,55 @@
   </head>
   <body>
     <div class="h-screen w-screen">
-      <header class="h-15 bg-[#021523] px-15 flex justify-between items-center">
+      <header class="h-15 bg-[#021523] px-5 flex justify-between items-center">
         <div>
           <img class="w-25" src="./img/amazon-logo.png" alt="logo" />
         </div>
-        <div>
-          <i class="fa-solid fa-location-dot text-white size-5"></i>
-          <span class="text-gray-300">Delivering to kolkata 700017</span>
-        </div>
+        <a class="flex items-end" href="/">
+          <div><i class="fa-solid fa-location-dot text-white size-5"></i></div>
+          <div>
+            <span class="text-gray-300 text-sm"
+              >Delivering to kolkata 700017</span
+            >
+            <p class="text-white font-bold">Update location</p>
+          </div>
+        </a>
         <div class="flex justify-center">
+          <button class="px-5 py-2 bg-gray-200 hover:bg-gray-300 rounded-l-md">
+            All
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
           <input
-            class="px-50 py-2 rounded-l-md bg-white"
+            class="px-50 py-2 bg-white"
             type="search"
             name="h-search"
             id="h-search"
+            placeholder="Search Amazon.in"
           />
-          <i
-            class="fa-solid fa-magnifying-glass bg-amber-500 size-10 rounded-r-md"
-          ></i>
+          <button class="bg-amber-500 size-10 rounded-r-md">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <div>
+        <a class="flex gap-2 items-center" href="/">
+          <img class="w-7 h-4" src="./img/india-flag.webp" alt="flag-img" />
+          <span class="text-white text-md">EN</span>
+          <i class="fa-solid fa-caret-down text-white"></i>
+        </a>
+        <a href="/">
           <i class="fa-regular fa-user text-white size-5"></i>
           <span class="text-white">Aditi Keshari</span>
-        </div>
-        <div>
+          <i class="fa-solid fa-caret-down text-white"></i>
+        </a>
+        <a href="/">
+          <p class="text-white">
+            Returns<br />
+            <span class="text-white font-bold">& Orders</span>
+          </p>
+        </a>
+        <a href="/">
           <i class="fa-solid fa-cart-shopping text-white size-5"></i>
           <span class="text-white">0</span>
-        </div>
+        </a>
       </header>
     </div>
   </body>
